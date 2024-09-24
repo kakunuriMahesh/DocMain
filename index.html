@@ -19,21 +19,25 @@
     ></script>
 
     <!--=============== BOXICONS ===============-->
+
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
 
     <!--=============== SWIPER CSS ===============-->
+
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--=============== CSS ===============-->
+
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Responsive portfolio website Ansel</title>
   </head>
   <body>
     <!--=============== HEADER ===============-->
+
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">VHC</a>
@@ -64,12 +68,11 @@
               </a>
             </li> -->
 
-            <li class="nav__item">
+            <!-- <li class="nav__item">
               <a href="tel:+91 90809 88450" class="nav__link">
                 <i class="fa-solid fa-phone-volume nav__icon"></i>
-                <!-- <img src="../DOCTO-main/assets/img/call_icon.png"/> -->
               </a>
-            </li>
+            </li> -->
 
             <li class="nav__item">
               <a href="#contact" class="nav__link">
@@ -109,7 +112,7 @@
             <p class="home__education">
               M.D. General Medicine | General Physician & Diabetologist
             </p>
-            <span style="margin-bottom:15px ;" class="section__subtitle"
+            <span style="margin-bottom: 15px" class="section__subtitle"
               >I address not only the disease but also aim to enhance the
               overall health and well-being of the patient.</span
             >
@@ -118,7 +121,7 @@
               <!-- <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">
                                 Download CV
                             </a> -->
-              <a href="#about" class="button">About me</a>
+              <a href="#about" class="button"><i class='bx bx-down-arrow-alt'></i></a>
             </div>
           </div>
 
@@ -151,8 +154,7 @@
               target="_blank"
               class="home__social-link"
             >
-              <!-- <i class="bx bxl-dribbble"></i> -->
-              <i class="fa-solid fa-phone-volume"></i>
+              <i class="bx bx-phone-call"></i>
             </a>
           </div>
 
@@ -180,11 +182,11 @@
               <div class="about__box">
                 <!-- <i class="bx bx-support about__icon"></i> -->
                 <i class="fa-regular fa-clock about__icon"></i>
-                <h3 class="about__title">Timings</h3>
-                <span class="about__subtitle timings__button"
+                <h2 class="about__subtitle timings__button"
                   >5 to 8 pm
                   <i class="fa-solid fa-arrow-right timings services__icon"></i
-                ></span>
+                ></h2>
+                <h3 class="about__title">Timings</h3>
               </div>
               <!-- TIMING MODAL -->
               <div class="timings__modal">
@@ -264,18 +266,31 @@
               offer a range of services, including treatment for diabetes,
               hypertension, thyroid disorders, and personalized care aimed at
               improving overall health and well-being. Catering primarily to
-              patients aged 40 and above, we emphasize professional, specialized
+              patients aged 40 and above,
+              <!-- we emphasize professional, specialized
               care that not only addresses medical conditions but also promotes
               long-term wellness. Additionally, our practice provides access to
               educational resources, including articles on health management, to
-              keep patients informed and empowered.
+              keep patients informed and empowered. -->
             </p>
+            <div
+              style="
+                background-color: var(--container-color);
+                border-radius: 8px;
+                padding: 10px 15px;
+                margin-bottom: 30px;
+                font-weight: bold;
+                font-style: italic;
+              "
+            >
+              <p>Vedic Health Clinic - Inspiring Health & Enhancing life.</p>
+            </div>
 
             <a
               href="#contact"
-              style="color: white"
+              style="color: white; width: 100%;"
               class="button appointment_button"
-              ><span>Appointment</span>
+              ><span>Book an Appointment</span>
               <i class="bx bx-right-arrow-alt services__icon services__icon"></i
             ></a>
           </div>
@@ -430,12 +445,80 @@
               </div> -->
             </div>
           </div>
+
+          <div class="skills__content">
+            <h3 class="skills__title">Articles</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">General Medicine</h3>
+                    <!-- <span class="skills__level">Intermediate</span> -->
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">
+                      Diabetes and Hypertension Treatment
+                    </h3>
+                    <!-- <span class="skills__level">Basic</span> -->
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Thyroid and Nutritional Health</h3>
+                    <!-- <span class="skills__level">Intermediate</span> -->
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">
+                      Patient Care & Health Management
+                    </h3>
+                    <!-- <span class="skills__level">Intermediate</span> -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Patient Care & Health Management</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Firebase</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
         </div>
       </section>
 
       <!--=============== SERVICES ===============-->
       <section id="services" class="services section">
-        <span class="section__subtitle">My Services</span>
+        <!-- <span class="section__subtitle">My Services</span> -->
         <h2 class="section__title">Specialist in</h2>
         <!-- removed class "grid" for below container -->
         <div class="services__container container">
@@ -445,6 +528,10 @@
               Fever, BP, Sugar, Thyroid , Gastric <br />
               Designer
             </h3> -->
+            <img
+              style="width: 100%; border-radius: 8px; margin-bottom: 10px"
+              src="/assets/img/VHC_CARD.jpg"
+            />
             <ul class="services__modal-list">
               <li class="services__modal-item">
                 <i class="bx bx-check services__modal-icon"></i>
@@ -615,8 +702,7 @@
       </section>
 
       <!--=============== WORK ===============-->
-      <!-- <section class="work section" id="work">
-        <span class="section__subtitle">My Portfolio</span>
+      <section class="work section" id="work">
         <h2 class="section__title">Recent Cases</h2>
 
         <div class="work__filters">
@@ -690,7 +776,7 @@
           </div>
         </div>
         <div id="details-section"></div>
-      </section> -->
+      </section>
 
       <!--=============== TESTIMONIALS ===============-->
       <!-- <section class="testimonial section">
@@ -755,25 +841,27 @@
       <!--=============== CONTACT ===============-->
       <section class="contact section" id="contact">
         <span class="section__subtitle">Get in touch</span>
-        <h2 class="section__title">Appointment</h2>
+        <h2 class="section__title">Book an Appointment</h2>
 
         <div class="contact__container container grid">
           <div class="contact__content">
-            <h3 class="contact__title">Talk to me</h3>
+            <h3 class="contact__title">Contact Details</h3>
 
             <div class="contact__info">
               <div class="contact__card">
                 <i class="bx bx-mail-send contact__card-icon"></i>
                 <h3 class="contact__card-title">Email</h3>
-                <span class="contact__card-data">alwaysramu@gmail.com</span>
+                <span class="contact__card-data"
+                  >dr.dasaradharam@gmail.com</span
+                >
 
                 <!-- Insert your original email -->
                 <a
-                  href="mailto:alwaysramu@gmail.com"
+                  href="mailto:dr.dasaradharam@gmail.com"
                   target="_blank"
                   class="contact__button"
                 >
-                  Write me
+                  Email me
                   <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </div>
@@ -781,32 +869,33 @@
               <div class="contact__card">
                 <i class="bx bxl-whatsapp contact__card-icon"></i>
                 <h3 class="contact__card-title">Whatsapp</h3>
-                <span class="contact__card-data">+91 99669 90335</span>
+                <span class="contact__card-data">+91 90809 88450</span>
 
                 <!-- Insert a real number plus country code -->
                 <a
-                  href="https://api.whatsapp.com/send?phone=9966990335&text=Hello, more information!"
+                  href="https://api.whatsapp.com/send?phone=9080988450&text=Hello, more information!"
                   target="_blank"
                   class="contact__button"
                 >
-                  Write me
+                  Message me
                   <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </div>
 
               <div class="contact__card">
                 <!-- <i class="bx bxl-messenger contact__card-icon"></i> -->
-                <i class="fa-solid fa-phone-volume contact__card-icon"></i>
-                <h3 class="contact__card-title">Messenger</h3>
-                <span class="contact__card-data">user.fb123</span>
+                <!-- <i class="fa-solid fa-phone-volume contact__card-icon"></i> -->
+                <i class="bx bx-phone-call contact__card-icon"></i>
+                <h3 class="contact__card-title">Call me</h3>
+                <span class="contact__card-data">+91 90809 88450</span>
 
                 <!-- Insert your brand name or profile -->
                 <a
-                  href="https://m.me/bedimcode"
+                  href="tel:+91 90809 88450"
                   target="_blank"
                   class="contact__button"
                 >
-                  Write me
+                  Call Me
                   <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </div>
@@ -814,16 +903,16 @@
           </div>
 
           <div class="contact__content">
-            <h3 class="contact__title">Book your Appointment</h3>
+            <h3 class="contact__title">Book an Appointment</h3>
 
             <form action="" class="contact__form">
               <div class="contact__form-div">
-                <label class="contact__form-tag">Enter your Name :</label>
+                <label class="contact__form-tag">Name :</label>
                 <input type="text" placeholder="" class="contact__form-input" />
               </div>
 
               <div class="contact__form-div">
-                <label class="contact__form-tag">Enter your Phone No :</label>
+                <label class="contact__form-tag">Phone No :</label>
                 <input
                   type="number"
                   placeholder=""
@@ -832,7 +921,9 @@
               </div>
 
               <div class="contact__form-div contact__form-area">
-                <label class="contact__form-tag">Enter your Concern :</label>
+                <label class="contact__form-tag"
+                  >Explain your medical condition :</label
+                >
                 <textarea
                   name=""
                   id=""
@@ -844,7 +935,7 @@
               </div>
 
               <button style="color: white" class="button appointment_button">
-                <span> Send Appointment</span>
+                <span> Send Request</span>
                 <i
                   class="bx bx-right-arrow-alt services__icon services__icon"
                 ></i>
@@ -912,6 +1003,10 @@
             VISHAKAPATNAM</span
           > -->
         </p>
+        <a href="https://maps.app.goo.gl/96Dqx6RBtwkWMUoS8" target="_blank"
+          ><button class="navigate__me">Navigate me</button></a
+        >
+
         <span class="footer__copy">
           &#169; VHC HOSPITALS. All rigths reserved
         </span>
