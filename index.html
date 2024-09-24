@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== fontawesome ===============-->
+
+    <script
+      src="https://kit.fontawesome.com/ddda93c007.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive portfolio website Ansel</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">VHC</a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home-alt nav__icon"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-book nav__icon"></i>
+              </a>
+            </li>
+
+            <!-- <li class="nav__item">
+              <a href="#work" class="nav__link">
+                <i class="bx bx-briefcase-alt-2 nav__icon"></i>
+              </a>
+            </li> -->
+
+            <li class="nav__item">
+              <a href="tel:+91 90809 88450" class="nav__link">
+                <i class="fa-solid fa-phone-volume nav__icon"></i>
+                <!-- <img src="../DOCTO-main/assets/img/call_icon.png"/> -->
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-message-square-detail nav__icon"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a
+                href="https://api.whatsapp.com/send?phone=9966990335&text=Hello, more information!"
+                target="_blank"
+                class="nav__link"
+              >
+                <i class="bx bxl-whatsapp nav__icon"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <span class="home__greeting">Hello, I'm</span>
+
+            <!-- <h1 class="company-name">Dr.Dasaradha Ram Barla</h1> -->
+            <div class="company-name" id="companyName">
+              Dr. Dasaradha Ram Barla
+            </div>
+
+            <p class="home__education">
+              M.D. General Medicine | General Physician & Diabetologist
+            </p>
+            <span style="margin-bottom:15px ;" class="section__subtitle"
+              >I address not only the disease but also aim to enhance the
+              overall health and well-being of the patient.</span
+            >
+            <div class="home__buttons">
+              <!-- Insert your CV -->
+              <!-- <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">
+                                Download CV
+                            </a> -->
+              <a href="#about" class="button">About me</a>
+            </div>
+          </div>
+
+          <div class="home__handle">
+            <!-- Insert your image, according to the example size of the portfolio -->
+            <img
+              src="./assets/img/IMG-20240923-WA0002-removebg-preview.png"
+              alt=""
+              class="home__img"
+            />
+          </div>
+
+          <div class="home__social">
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=9966990335&text=Hello, more information!"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="bx bxl-whatsapp"></i>
+            </a>
+            <a
+              href="https://dribbble.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <!-- <i class="bx bxl-dribbble"></i> -->
+              <i class="fa-solid fa-phone-volume"></i>
+            </a>
+          </div>
+
+          <a href="#about" class="home__scroll">
+            <i class="bx bx-mouse home__scroll-icon"></i>
+            <span class="home__scroll-name">Scroll Down</span>
+          </a>
+        </div>
+      </section>
+
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <!-- <span class="section__subtitle">My Intro</span> -->
+        <h2 class="section__title">Vedic Health Clinic</h2>
+
+        <div class="about__container container grid">
+          <img
+            src="/assets/img/IMG_20240923_171821.jpg"
+            alt=""
+            class="about__img"
+          />
+
+          <div class="about__data">
+            <div class="about__info">
+              <div class="about__box">
+                <!-- <i class="bx bx-support about__icon"></i> -->
+                <i class="fa-regular fa-clock about__icon"></i>
+                <h3 class="about__title">Timings</h3>
+                <span class="about__subtitle timings__button"
+                  >5 to 8 pm
+                  <i class="fa-solid fa-arrow-right timings services__icon"></i
+                ></span>
+              </div>
+              <!-- TIMING MODAL -->
+              <div class="timings__modal">
+                <div class="services__modal-content">
+                  <i class="bx bx-x services__modal-close"></i>
+
+                  <h3 class="services__modal-title">Timings</h3>
+                  <!-- <p class="services__modal-description">
+                    Service with more than 3 years of experience. Providing
+                    quality work to clients and companies.
+                  </p> -->
+
+                  <ul class="services__modal-list">
+                    <li class="services__modal-item">
+                      <i class="bx bx-check services__modal-icon"></i>
+                      <p class="services__modal-info">MON-SAT - 5 to 8 Pm</p>
+                    </li>
+
+                    <li class="services__modal-item">
+                      <i class="bx bx-check services__modal-icon"></i>
+                      <p class="services__modal-info">
+                        SAT-SUN - 10 Am to 1 Pm
+                      </p>
+                    </li>
+
+                    <!-- <li class="services__modal-item">
+                      <i class="bx bx-check services__modal-icon"></i>
+                      <p class="services__modal-info">
+                        I create ux element interactions.
+                      </p>
+                    </li> -->
+
+                    <!-- <li class="services__modal-item">
+                      <i class="bx bx-check services__modal-icon"></i>
+                      <p class="services__modal-info">
+                        I position your company brand.
+                      </p>
+                    </li> -->
+
+                    <!-- <li class="services__modal-item">
+                      <i class="bx bx-check services__modal-icon"></i>
+                      <p class="services__modal-info">
+                        Design and mockups of products for companies.
+                      </p>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+
+              <div class="about__box">
+                <i class="bx bx-award about__icon"></i>
+                <h3 class="about__title">Experience</h3>
+                <span class="about__subtitle">5 Years +</span>
+              </div>
+
+              <div class="about__box">
+                <!-- <i class="bx bx-briefcase-alt about__icon"></i> -->
+                <i class="fa-regular fa-hospital about__icon"></i>
+                <h3 class="about__title">Location</h3>
+                <span
+                  ><a
+                    class="about__subtitle"
+                    href="https://maps.app.goo.gl/96Dqx6RBtwkWMUoS8"
+                    target="_blank"
+                    >Navigate
+                    <i class="fa-solid fa-arrow-right services__icon"></i></a
+                ></span>
+              </div>
+            </div>
+
+            <p class="about__description">
+              <!-- Frontend developer, I create web pages with UI / UX user interface, 
+                            I have years of experience and many clients are happy with 
+                            the projects carried out. -->
+              Our medical practice in Visakhapatnam specializes in General
+              Medicine, with a focus on comprehensive health management. We
+              offer a range of services, including treatment for diabetes,
+              hypertension, thyroid disorders, and personalized care aimed at
+              improving overall health and well-being. Catering primarily to
+              patients aged 40 and above, we emphasize professional, specialized
+              care that not only addresses medical conditions but also promotes
+              long-term wellness. Additionally, our practice provides access to
+              educational resources, including articles on health management, to
+              keep patients informed and empowered.
+            </p>
+
+            <a
+              href="#contact"
+              style="color: white"
+              class="button appointment_button"
+              ><span>Appointment</span>
+              <i class="bx bx-right-arrow-alt services__icon services__icon"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Experience ===============-->
+      <section class="skills section" id="experience">
+        <!-- <span class="section__subtitle">My abilities</span> -->
+        <h2 class="section__title">Education & Experience</h2>
+
+        <div class="skills__container container grid">
+          <div class="skills__content">
+            <h3 class="skills__title">Education</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">M.B.B.S</h3>
+                    <!-- <span class="skills__level">Basic</span> -->
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">M.D. (General Medicine)</h3>
+                    <!-- <span class="skills__level">Advanced</span> -->
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Advanced Diabetes Management</h3>
+                    <!-- <span class="skills__level">Intermediate</span> -->
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">
+                      Hypertension Control Certification
+                    </h3>
+                    <!-- <span class="skills__level">Intermediate</span> -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Hypertension Control Certification</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <h3 class="skills__title">Experience</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">General Medicine</h3>
+                    <!-- <span class="skills__level">Intermediate</span> -->
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">
+                      Diabetes and Hypertension Treatment
+                    </h3>
+                    <!-- <span class="skills__level">Basic</span> -->
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Thyroid and Nutritional Health</h3>
+                    <!-- <span class="skills__level">Intermediate</span> -->
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">
+                      Patient Care & Health Management
+                    </h3>
+                    <!-- <span class="skills__level">Intermediate</span> -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Patient Care & Health Management</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Firebase</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== SERVICES ===============-->
+      <section id="services" class="services section">
+        <span class="section__subtitle">My Services</span>
+        <h2 class="section__title">Specialist in</h2>
+        <!-- removed class "grid" for below container -->
+        <div class="services__container container">
+          <div class="services__card">
+            <!-- <img style="border-radius: 20px;margin-top: -50px;" src="https://mosaicfamilycares.com/wp-content/uploads/internal-medicine-2212.jpg" /> -->
+            <!-- <h3 class="services__title">
+              Fever, BP, Sugar, Thyroid , Gastric <br />
+              Designer
+            </h3> -->
+            <ul class="services__modal-list">
+              <li class="services__modal-item">
+                <i class="bx bx-check services__modal-icon"></i>
+                <p class="services__modal-info">Thyroid</p>
+              </li>
+
+              <li class="services__modal-item">
+                <i class="bx bx-check services__modal-icon"></i>
+                <p class="services__modal-info">Gastric</p>
+              </li>
+              <li class="services__modal-item">
+                <i class="bx bx-check services__modal-icon"></i>
+                <p class="services__modal-info">Heart Diseases</p>
+              </li>
+              <li class="services__modal-item">
+                <i class="bx bx-check services__modal-icon"></i>
+                <p class="services__modal-info">Lung Diseases</p>
+              </li>
+              <li class="services__modal-item">
+                <i class="bx bx-check services__modal-icon"></i>
+                <p class="services__modal-info">Gastric</p>
+              </li>
+            </ul>
+
+            <span class="services__button">
+              See more <i class="bx bx-right-arrow-alt services__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+
+                <h3 class="services__modal-title">Specialist</h3>
+                <p class="services__modal-description">
+                  Service with more than 5 years of experience.
+                </p>
+
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">Lung Diseases</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">Gastric</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="services__card">
+            <h3 class="services__title">
+              Heart Diseases <br />
+              Lung Diseases
+            </h3>
+
+            <span class="services__button">
+              See more <i class="bx bx-right-arrow-alt services__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+
+                <h3 class="services__modal-title">Ui/Ux Designer</h3>
+                <p class="services__modal-description">
+                  Service with more than 3 years of experience. Providing
+                  quality work to clients and companies.
+                </p>
+
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I develop the user interface.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">Web page development.</p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I create ux element interactions.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I position your company brand.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Design and mockups of products for companies.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="services__card">
+            <h3 class="services__title">
+              Kidney <br />
+              Neurological Problems
+            </h3>
+
+            <span class="services__button">
+              See more <i class="bx bx-right-arrow-alt services__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+
+                <h3 class="services__modal-title">Visual Designer</h3>
+                <p class="services__modal-description">
+                  Service with more than 3 years of experience. Providing
+                  quality work to clients and companies.
+                </p>
+
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I develop the user interface.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">Web page development.</p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I create ux element interactions.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I position your company brand.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Design and mockups of products for companies.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <!--=============== WORK ===============-->
+      <!-- <section class="work section" id="work">
+        <span class="section__subtitle">My Portfolio</span>
+        <h2 class="section__title">Recent Cases</h2>
+
+        <div class="work__filters">
+          <span class="work__item active-work" data-filter="all">All</span>
+          <span class="work__item" data-filter=".web">Heart Cases</span>
+          <span class="work__item" data-filter=".movil">Lung Cases</span>
+          <span class="work__item" data-filter=".design">Kidney Cases</span>
+        </div>
+
+        <div class="work__container container grid">
+          <div class="work__card mix web">
+            <h3 class="work__title">Michael Johnson</h3>
+            <p>Age: 58 | Gender: Male</p>
+            <p>Medical History: Coronary Artery Disease, High Blood Pressure</p>
+            <button
+              class="work__button"
+              onclick="showDetails('Michael Johnson', 58, 'Male', 'Coronary Artery Disease, High Blood Pressure', 'Michael had a long history of high blood pressure, which eventually led to coronary artery disease. After several diagnostic tests, including an angiogram, it was revealed that his coronary arteries were severely blocked. Michael underwent a successful coronary artery bypass graft (CABG) surgery and was placed on a strict diet and exercise regime to improve his heart health.')"
+            >
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
+            </button>
+          </div>
+
+          <div class="work__card mix web">
+            <h3 class="work__title">Emily Davis</h3>
+            <p>Age: 67 | Gender: Female</p>
+            <p>Medical History: Congestive Heart Failure, Hypertension</p>
+            <button
+              class="work__button"
+              onclick="showDetails('Emily Davis', 67, 'Female', 'Congestive Heart Failure, Hypertension', 'Emily was diagnosed with congestive heart failure and had been managing hypertension for years. An echocardiogram revealed a reduced ejection fraction, indicating weakened heart muscles. Emily was started on diuretics and beta-blockers to manage fluid retention and reduce blood pressure. A strict heart-healthy diet was recommended.')"
+            >
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
+            </button>
+          </div>
+
+          <div class="work__card mix web">
+            <h3 class="work__title">David Williams</h3>
+            <p>Age: 72 | Gender: Male</p>
+            <p>Medical History: Atrial Fibrillation, Stroke</p>
+            <button
+              class="work__button"
+              onclick="showDetails('David Williams', 72, 'Male', 'Atrial Fibrillation, Stroke', 'David suffered from atrial fibrillation and experienced a minor stroke two years ago. A Holter monitor and brain MRI revealed irregular heart rhythms and minor brain damage. David was placed on anticoagulants and underwent a cardioversion procedure to restore normal heart rhythm. A comprehensive stroke rehabilitation program was also initiated.')"
+            >
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
+            </button>
+          </div>
+
+          <div class="work__card mix movil">
+            <h3 class="work__title">Sarah Williams</h3>
+            <p>Age: 45 | Gender: Female</p>
+            <p>Medical History: Chronic Asthma, Pulmonary Fibrosis</p>
+            <button
+              class="work__button"
+              onclick="showDetails('Sarah Williams', 45, 'Female', 'Chronic Asthma, Pulmonary Fibrosis', 'Sarah had been struggling with asthma for most of her life, but her condition worsened due to pulmonary fibrosis. A comprehensive pulmonary function test and CT scan confirmed the diagnosis of pulmonary fibrosis. Sarah was placed on a combination of corticosteroids and oxygen therapy. A personalized rehabilitation program was created to help manage her symptoms and improve lung capacity.')"
+            >
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
+            </button>
+          </div>
+
+          <div class="work__card mix design">
+            <h3 class="work__title">James Thompson</h3>
+            <p>Age: 64 | Gender: Male</p>
+            <p>
+              Medical History: Chronic Kidney Disease (CKD), Type 2 Diabetes
+            </p>
+            <button
+              class="work__button"
+              onclick="showDetails('James Thompson', 64, 'Male', 'Chronic Kidney Disease (CKD), Type 2 Diabetes', 'James had been managing diabetes for 20 years, but his kidney function started to decline due to diabetic nephropathy. Initial blood tests and kidney function tests revealed Stage 3 CKD. An immediate adjustment to his medication and diet was recommended. James was placed on a specialized renal diet and began medication to slow the progression of CKD. He was monitored closely with regular kidney function tests.')"
+            >
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
+            </button>
+          </div>
+        </div>
+        <div id="details-section"></div>
+      </section> -->
+
+      <!--=============== TESTIMONIALS ===============-->
+      <!-- <section class="testimonial section">
+        <span class="section__subtitle"></span>
+        <h2 class="section__title">Patient Speaks</h2>
+
+        <div class="testimonial__container container swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="assets/img/testimonial1.png"
+                alt=""
+                class="testimonial__img"
+              />
+
+              <h3 class="testimonial__name">Phani K</h3>
+              <p class="testimonial__description">
+                Dr. Dasaradha Ram garu clearly values the comprehensive care of
+                his patients and takes a genuine interest their lives. I've
+                always felt that the care and attention I receive is more like
+                that of a family member than just a patient.
+              </p>
+            </div>
+
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="assets/img/testimonial2.png"
+                alt=""
+                class="testimonial__img"
+              />
+
+              <h3 class="testimonial__name">SriRam G</h3>
+              <p class="testimonial__description">
+                is the best doctor I have ever had. He is bright, articulate and
+                takes the time to listen to all of my concerns. Most important,
+                his health care and analysis for me has always worked. I am very
+                fortunate to have him as my doctor.
+              </p>
+            </div>
+
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="assets/img/testimonial3.png"
+                alt=""
+                class="testimonial__img"
+              />
+
+              <h3 class="testimonial__name">Mahesh P</h3>
+              <p class="testimonial__description">
+                I am comfortable discussing my health and are always willing to
+                work with my concerns. Being an out-of-state student, I never
+                have to worry about whether or not I am too far to ask a
+                question. Everyone is very accessible and reliable!
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section> -->
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact">
+        <span class="section__subtitle">Get in touch</span>
+        <h2 class="section__title">Appointment</h2>
+
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Talk to me</h3>
+
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="bx bx-mail-send contact__card-icon"></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data">alwaysramu@gmail.com</span>
+
+                <!-- Insert your original email -->
+                <a
+                  href="mailto:alwaysramu@gmail.com"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact__card">
+                <i class="bx bxl-whatsapp contact__card-icon"></i>
+                <h3 class="contact__card-title">Whatsapp</h3>
+                <span class="contact__card-data">+91 99669 90335</span>
+
+                <!-- Insert a real number plus country code -->
+                <a
+                  href="https://api.whatsapp.com/send?phone=9966990335&text=Hello, more information!"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact__card">
+                <!-- <i class="bx bxl-messenger contact__card-icon"></i> -->
+                <i class="fa-solid fa-phone-volume contact__card-icon"></i>
+                <h3 class="contact__card-title">Messenger</h3>
+                <span class="contact__card-data">user.fb123</span>
+
+                <!-- Insert your brand name or profile -->
+                <a
+                  href="https://m.me/bedimcode"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">Book your Appointment</h3>
+
+            <form action="" class="contact__form">
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Enter your Name :</label>
+                <input type="text" placeholder="" class="contact__form-input" />
+              </div>
+
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Enter your Phone No :</label>
+                <input
+                  type="number"
+                  placeholder=""
+                  class="contact__form-input"
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Enter your Concern :</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder=""
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+
+              <button style="color: white" class="button appointment_button">
+                <span> Send Appointment</span>
+                <i
+                  class="bx bx-right-arrow-alt services__icon services__icon"
+                ></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">VEDIC HEALTH CLINIC</h1>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#about" class="footer__link">About</a>
+          </li>
+          <li>
+            <a href="#experience" class="footer__link">Experience</a>
+          </li>
+          <li>
+            <a href="#services" class="footer__link">Services</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-twitter"></i>
+          </a>
+        </ul>
+        <p class="address__location">
+          <i class="fa-solid fa-location-dot"></i>
+          <b>Address:</b>
+          <a
+            style="color: black"
+            href="https://maps.app.goo.gl/96Dqx6RBtwkWMUoS8"
+            target="_blank"
+            >PM PALEM, MADHURAWADA, VISHAKAPATNAM</a
+          >
+
+          <!-- <span></i><b>Address:</b> </span> <br />
+          PM PALEM, <br />
+          MADHURAWADA,<span
+            ><br />
+            VISHAKAPATNAM</span
+          > -->
+        </p>
+        <span class="footer__copy">
+          &#169; VHC HOSPITALS. All rigths reserved
+        </span>
+      </div>
+    </footer>
+    <!--  -->
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
