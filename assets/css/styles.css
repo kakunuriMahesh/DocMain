@@ -561,7 +561,7 @@ body.light-theme {
 
 .services__card {
   background-color: var(--container-color);
-  padding: 3rem 1.5rem 1.5rem;
+  padding: 20px;
   border-radius: 1rem;
   /* added */
   display: flex;
@@ -582,6 +582,24 @@ body.light-theme {
   justify-content: center;
   column-gap: 0.25rem;
   cursor: pointer;
+}
+/* added */
+.arrow-container {
+  display: inline-block;
+  background-color: #a395e9;
+  transition: transform 0.3s ease-in-out;
+
+  border-radius: 8px;
+}
+.down-arrow {
+  font-size: 24px;
+  display: inline-block;
+  color: #000000;
+  cursor: pointer;
+}
+/* Hover effect */
+.arrow-container:hover {
+  transform: translateY(10px); /* Moves the arrow down by 10px */
 }
 .timings__button {
   /* color: var(--first-color); */
@@ -731,6 +749,7 @@ body.light-theme {
   font-weight: var(--font-medium);
   margin-bottom: 0.25rem;
 }
+
 
 .work__button {
   width: max-content;
@@ -1134,7 +1153,7 @@ body.light-theme {
     column-gap: 3rem;
   }
   .services__card {
-    padding: 5rem 2rem 1.5rem;
+    /* padding: 5rem 2rem 1.5rem; */
     /* added */
     display: flex;
     flex-direction: column;

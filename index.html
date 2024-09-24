@@ -112,16 +112,15 @@
             <p class="home__education">
               M.D. General Medicine | General Physician & Diabetologist
             </p>
-            <span style="margin-bottom: 15px" class="section__subtitle"
-              >I address not only the disease but also aim to enhance the
-              overall health and well-being of the patient.</span
-            >
+
             <div class="home__buttons">
               <!-- Insert your CV -->
               <!-- <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">
                                 Download CV
                             </a> -->
-              <a href="#about" class="button"><i class='bx bx-down-arrow-alt'></i></a>
+              <a href="#about" class="arrow-container" 
+                ><i class="bx bx-down-arrow-alt down-arrow" style="font-size: 25px;"></i
+              ></a>
             </div>
           </div>
 
@@ -182,10 +181,10 @@
               <div class="about__box">
                 <!-- <i class="bx bx-support about__icon"></i> -->
                 <i class="fa-regular fa-clock about__icon"></i>
-                <h2 class="about__subtitle timings__button"
-                  >5 to 8 pm
-                  <i class="fa-solid fa-arrow-right timings services__icon"></i
-                ></h2>
+                <h2 class="about__subtitle timings__button">
+                  5 to 8 pm
+                  <i class="fa-solid fa-arrow-right timings services__icon"></i>
+                </h2>
                 <h3 class="about__title">Timings</h3>
               </div>
               <!-- TIMING MODAL -->
@@ -288,12 +287,34 @@
 
             <a
               href="#contact"
-              style="color: white; width: 100%;"
-              class="button appointment_button"
+              style="color: white; width: 100%"
+              class="button appointment_button services__button"
               ><span>Book an Appointment</span>
-              <i class="bx bx-right-arrow-alt services__icon services__icon"></i
+              <i class="bx bx-right-arrow-alt services__icon"></i
             ></a>
           </div>
+        </div>
+      </section>
+
+      <!-- ======== QUOTE ========= -->
+      <section
+        class="quote section"
+        style="
+          height: 70vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-style: italic;
+        "
+      >
+        <div>
+          <span
+            style="margin-bottom: 15px; font-size: 20px"
+            class="section__subtitle"
+            >"I address not only the disease but also aim to enhance the overall
+            health and well-being of the patient."</span
+          >
+          <h3 style="text-align: right; padding-right: 20px;">- Dr. Dasaradha Ram Barla</h3>
         </div>
       </section>
 
@@ -532,35 +553,83 @@
               style="width: 100%; border-radius: 8px; margin-bottom: 10px"
               src="/assets/img/VHC_CARD.jpg"
             />
-            <ul class="services__modal-list">
-              <li class="services__modal-item">
-                <i class="bx bx-check services__modal-icon"></i>
-                <p class="services__modal-info">Thyroid</p>
-              </li>
+            <div style="display: flex; justify-content: space-around">
+              <ul class="services__modal-list">
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Thyroid</p>
+                </li>
 
-              <li class="services__modal-item">
-                <i class="bx bx-check services__modal-icon"></i>
-                <p class="services__modal-info">Gastric</p>
-              </li>
-              <li class="services__modal-item">
-                <i class="bx bx-check services__modal-icon"></i>
-                <p class="services__modal-info">Heart Diseases</p>
-              </li>
-              <li class="services__modal-item">
-                <i class="bx bx-check services__modal-icon"></i>
-                <p class="services__modal-info">Lung Diseases</p>
-              </li>
-              <li class="services__modal-item">
-                <i class="bx bx-check services__modal-icon"></i>
-                <p class="services__modal-info">Gastric</p>
-              </li>
-            </ul>
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Gastric</p>
+                </li>
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Heart Diseases</p>
+                </li>
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Lung Diseases</p>
+                </li>
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Gastric</p>
+                </li>
+              </ul>
+              <ul class="services__modal-list">
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Thyroid</p>
+                </li>
 
-            <span class="services__button">
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Gastric</p>
+                </li>
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Heart Diseases</p>
+                </li>
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Lung Diseases</p>
+                </li>
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Gastric</p>
+                </li>
+              </ul>
+              <ul class="services__modal-list">
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Thyroid</p>
+                </li>
+
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Gastric</p>
+                </li>
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Heart Diseases</p>
+                </li>
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Lung Diseases</p>
+                </li>
+                <li class="services__modal-item">
+                  <i class="bx bx-check services__modal-icon"></i>
+                  <p class="services__modal-info">Gastric</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- <span class="services__button">
               See more <i class="bx bx-right-arrow-alt services__icon"></i>
-            </span>
+            </span> -->
 
-            <div class="services__modal">
+            <!-- <div class="services__modal">
               <div class="services__modal-content">
                 <i class="bx bx-x services__modal-close"></i>
 
@@ -580,7 +649,7 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <!-- <div class="services__card">
@@ -702,7 +771,7 @@
       </section>
 
       <!--=============== WORK ===============-->
-      <section class="work section" id="work">
+      <!-- <section class="work section" id="work">
         <h2 class="section__title">Recent Cases</h2>
 
         <div class="work__filters">
@@ -776,7 +845,7 @@
           </div>
         </div>
         <div id="details-section"></div>
-      </section>
+      </section> -->
 
       <!--=============== TESTIMONIALS ===============-->
       <!-- <section class="testimonial section">
@@ -934,7 +1003,10 @@
                 ></textarea>
               </div>
 
-              <button style="color: white" class="button appointment_button">
+              <button
+                style="color: white"
+                class="button appointment_button services__button"
+              >
                 <span> Send Request</span>
                 <i
                   class="bx bx-right-arrow-alt services__icon services__icon"
