@@ -727,10 +727,10 @@ body.light-theme {
 
 }
 .vhc__quote{
-  font-size: medium;
+  font-size: 15px;
 }
 .vhc__subquote{
-  font-size: small;
+  font-size: 12px;
 }
 @media (max-width:800px){
   .quote_style{
