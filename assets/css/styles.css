@@ -591,6 +591,14 @@ body.light-theme {
   column-gap: 0.25rem;
   cursor: pointer;
 }
+.artical__button{
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.25rem;
+  cursor: pointer;
+}
 /* added */
 .about__arrow_content{
   font-size:20px ;
@@ -625,9 +633,10 @@ body.light-theme {
   cursor: pointer;
 }
 
-.services__button:hover .services__icon {
+.services__button,.artical__button:hover .services__icon {
   transform: translateX(0.25rem);
 }
+
 
 .services__icon {
   font-size: 1rem;
