@@ -726,10 +726,23 @@ body.light-theme {
   font-size: 50px;
 
 }
+.vhc__quote{
+  font-size: medium;
+}
+.vhc__subquote{
+  font-size: small;
+}
 @media (max-width:800px){
   .quote_style{
     font-size: 25px;
     padding: 0px 10px;
+  }
+  .about__arrow_content{
+    font-size: 15px;
+  }
+  
+  .vhc__subquote{
+    font-size: 12px;
   }
 }
 /*Active modal*/
