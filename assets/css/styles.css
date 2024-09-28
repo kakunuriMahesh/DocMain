@@ -129,12 +129,17 @@ body.light-theme {
   --text-color: hsl(var(--second-hue), 8%, 35%);
   --body-color: hsl(var(--second-hue), 100%, 99%);
   --container-color: #ffffff;
+  /* added */
 }
 
 /*========== 
     Color changes in some parts of 
     the website, in light theme
 ==========*/
+.light-theme .barla{
+  color: #78039e !important;
+  font-weight: bolder;
+}
 .light-theme .scroll-header {
   box-shadow: 0 2px 4px hsla(0, 29%, 88%, 0.1);
 }
@@ -315,7 +320,7 @@ body.light-theme {
 
 .home__data {
   text-align: center;
-  order: 1;
+  /* order: 1; */
 }
 
 .home__greeting,
@@ -342,7 +347,7 @@ body.light-theme {
 
 .home__img {
   width: 160px;
-  order: 0;
+  /* order: 0; */
 }
 
 .home__handle {
@@ -354,7 +359,7 @@ body.light-theme {
     hsla(var(--first-hue), var(--sat), var(--lig), 1),
     hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
   );
-  border-radius: 10rem 10rem 1rem 1rem;
+  border-radius: 1rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -623,6 +628,9 @@ body.light-theme {
   column-gap: 0.25rem;
   cursor: pointer;
 }
+.artical__button:hover{
+  color: #a395e9;
+}
 /* added */
 .about__arrow_content{
   font-size:20px ;
@@ -636,6 +644,7 @@ body.light-theme {
   background-color: #a395e9;
   transition: transform 0.3s ease-in-out;
   border-radius: 8px;
+  padding: 3px 10px;
 }
 .down-arrow {
   font-size: 24px;
