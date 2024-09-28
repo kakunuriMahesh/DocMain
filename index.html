@@ -88,7 +88,7 @@
     <main class="main">
       <!--=============== HOME ===============-->
       <section class="home section" id="home">
-        <div class="home__container container grid">
+        <div class="home__container container ">
           <div class="home__data">
             <span class="home__greeting">Hello, I'm</span>
 
@@ -124,7 +124,8 @@
             />
           </div>
 
-          <div class="home__social">
+          <!-- ===== side icons closed ====== -->
+          <!-- <div class="home__social">
             <a
               href="https://www.linkedin.com/"
               target="_blank"
@@ -146,12 +147,12 @@
             >
               <i class="bx bx-phone-call"></i>
             </a>
-          </div>
+          </div> -->
 
-          <a href="#about" class="home__scroll">
+          <!-- <a href="#about" class="home__scroll">
             <i class="bx bx-mouse home__scroll-icon"></i>
             <span class="home__scroll-name">Scroll Down</span>
-          </a>
+          </a> -->
         </div>
       </section>
 
@@ -1000,45 +1001,66 @@
           <div class="contact__content">
             <h3 class="contact__title">Book an Appointment</h3>
 
-            <form action="" class="contact__form">
+            <!-- <form name="submit-to-google-sheet" id="submit-to-google-sheet" class="contact__form">
               <div class="contact__form-div">
                 <label class="contact__form-tag">Name :</label>
-                <input type="text" placeholder="" class="contact__form-input" />
+                <input name="name" type="text" placeholder="" class="contact__form-input" required />
               </div>
-
+            
               <div class="contact__form-div">
                 <label class="contact__form-tag">Phone No :</label>
                 <input
-                  type="number"
+                  type="tel"
                   placeholder=""
                   class="contact__form-input"
+                  name="phone"
+                  required
                 />
               </div>
-
+            
               <div class="contact__form-div contact__form-area">
-                <label class="contact__form-tag"
-                  >Explain your medical condition :</label
-                >
+                <label class="contact__form-tag">Explain your medical condition :</label>
                 <textarea
-                  name=""
-                  id=""
+                  name="message"
                   cols="30"
                   rows="10"
                   placeholder=""
                   class="contact__form-input"
+                  required
                 ></textarea>
               </div>
-
+            
               <button
                 style="color: white"
                 class="button appointment_button services__button"
+                type="submit"
               >
                 <span> Send Request</span>
-                <i
-                  class="bx bx-right-arrow-alt services__icon services__icon"
-                ></i>
+                <i class="bx bx-right-arrow-alt services__icon"></i>
+              </button>
+            </form> -->
+            <form name="submit-to-google-sheet" id="submit-to-google-sheet" class="contact__form">
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Name :</label>
+                <input name="name" type="text" placeholder="" class="contact__form-input" required />
+              </div>
+            
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Phone No :</label>
+                <input type="tel" placeholder="" class="contact__form-input" name="phone" required />
+              </div>
+            
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Explain your medical condition :</label>
+                <textarea name="message" cols="30" rows="10" placeholder="" class="contact__form-input" required></textarea>
+              </div>
+            
+              <button style="color: white" class="button appointment_button services__button" type="submit">
+                <span>Send Request</span>
+                <i class="bx bx-right-arrow-alt services__icon"></i>
               </button>
             </form>
+                       
           </div>
         </div>
       </section>
@@ -1122,5 +1144,74 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <!-- ========FORM======== -->
+    <!-- <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxWVUCwR2XjlWs4SaAYoOVAJ1zpG3H3Pi_6aL68c9eh_q-h73AHMUt2vknLYIcvGZoY4A/exec';
+      const form = document.forms['submit-to-google-sheet'];
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            if (response.ok) {
+              return response.json();
+            } else {
+              throw new Error('Form submission failed.');
+            }
+          })
+          .then(data => console.log('Success!', data))
+          .catch(error => console.error('Error!', error.message));
+      });
+    </script> -->
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxWVUCwR2XjlWs4SaAYoOVAJ1zpG3H3Pi_6aL68c9eh_q-h73AHMUt2vknLYIcvGZoY4A/exec';
+      const form = document.forms['submit-to-google-sheet'];
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+    
+        // Send form data via Fetch API
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            if (response.ok) {
+              return response.json();
+            } else {
+              throw new Error('Form submission failed.');
+            }
+          })
+          .then(data => {
+            console.log('Success!', data);
+    
+            // Clear form fields after submission
+            form.reset();
+    
+            // Show success toast notification
+            showToast('Form submitted successfully!', 'success');
+          })
+          .catch(error => {
+            console.error('Error!', error.message);
+    
+            // Show error toast notification
+            showToast('Error submitting form. Please try again.', 'error');
+          });
+      });
+    
+      // Toast notification function
+      function showToast(message, type) {
+        const toast = document.createElement('div');
+        toast.className = `toast ${type}`;
+        toast.innerText = message;
+        document.body.appendChild(toast);
+    
+        // Remove toast after 3 seconds
+        setTimeout(() => {
+          toast.remove();
+        }, 3000);
+      }
+    </script>
+    
+    
   </body>
 </html>

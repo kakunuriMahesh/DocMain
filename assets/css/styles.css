@@ -303,13 +303,19 @@ body.light-theme {
 
 /*=============== HOME ===============*/
 .home__container {
-  position: relative;
+  /* position: relative;
   row-gap: 4.5rem;
-  padding-top: 2rem;
+  padding-top: 2rem; */
+  display: flex;
+  flex-direction: row;
+  /* gap: 30px; */
+  justify-content: space-around;
+  align-items: center;
 }
 
 .home__data {
   text-align: center;
+  order: 1;
 }
 
 .home__greeting,
@@ -327,6 +333,7 @@ body.light-theme {
 .home__education {
   color: var(--text-color);
   margin-bottom: 0.5rem;
+  font-size: 15px;
 }
 
 .home__name {
@@ -335,6 +342,7 @@ body.light-theme {
 
 .home__img {
   width: 160px;
+  order: 0;
 }
 
 .home__handle {
@@ -510,6 +518,22 @@ body.light-theme {
 @media (max-width:800px){
   .skills__content{
     width: 100%;
+  }
+  .home__container {
+    /* position: relative;
+    row-gap: 4.5rem;
+    padding-top: 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .home__data{
+    order: 0;
+  }
+  .home__img{
+    order: 1;
   }
 }
 
@@ -1241,7 +1265,7 @@ body.light-theme {
 .company-name {
   /* background-color: #a395e9; */
   font-weight: bolder;
-  font-size: x-large;
+  font-size: 45px;
 
   border-radius: 5px;
   color: #a395e9;
@@ -1334,4 +1358,45 @@ body.light-theme {
   border-radius: 8px;
   color: var(--text-color-light);
   padding: 4px 10px;
+}
+
+/* ====Tosty==== */
+
+/* Toast Notification Styling */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+.toast.success {
+  background-color: #28a745; /* Green for success */
+}
+
+.toast.error {
+  background-color: #dc3545; /* Red for error */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(50px);
+  }
+  10%, 90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(50px);
+  }
 }
