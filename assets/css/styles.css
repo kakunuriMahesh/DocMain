@@ -520,14 +520,14 @@ body.light-theme {
     width: 100%;
   }
   .home__container {
-    /* position: relative;
-    row-gap: 4.5rem;
-    padding-top: 2rem; */
     display: flex;
     flex-direction: column;
     gap: 30px;
     justify-content: center;
     align-items: center;
+  }
+  .company__name{
+    font-size: 30px !important;
   }
   .home__data{
     order: 0;
@@ -1262,7 +1262,7 @@ body.light-theme {
   }
 }
 
-.company-name {
+.company__name {
   /* background-color: #a395e9; */
   font-weight: bolder;
   font-size: 45px;
