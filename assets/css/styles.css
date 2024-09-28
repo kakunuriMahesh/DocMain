@@ -645,6 +645,7 @@ body.light-theme {
   transition: transform 0.3s ease-in-out;
   border-radius: 8px;
   padding: 3px 10px;
+  color: #333;
 }
 .down-arrow {
   font-size: 24px;
