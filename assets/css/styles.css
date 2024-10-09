@@ -541,6 +541,12 @@ body.light-theme {
     justify-content: center;
     align-items: center;
   }
+  .articles-container{
+    flex-direction: column;
+  }
+  .article_sub{
+    width: 100% !important;
+  }
   .company__name {
     font-size: 30px !important;
   }
@@ -881,10 +887,9 @@ body.light-theme {
 /*=============== TESTIMONIAL ===============*/
 
 .articles-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 .article_sub {
   background-color: var(--container-color);
@@ -893,6 +898,8 @@ body.light-theme {
   display: flex;
   align-items: center;
   gap: 15px;
+  width: 50%;
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
 }
 .testimonial__card {
   background-color: var(--container-color);
