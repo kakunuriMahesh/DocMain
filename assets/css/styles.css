@@ -140,7 +140,7 @@ body.light-theme {
     Color changes in some parts of 
     the website, in light theme
 ==========*/
-.light-theme .barla,.section__title {
+.light-theme .section__title {
   color: #78039e !important;
   font-weight: bolder;
 }
@@ -767,6 +767,16 @@ body.light-theme {
   cursor: pointer;
 }
 /* Quote */
+.class_add{
+  display: none !important;
+}
+.quote {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
 .quote_style {
   margin-bottom: 15px;
   font-size: 36px;
@@ -869,6 +879,7 @@ body.light-theme {
 }
 
 /*=============== TESTIMONIAL ===============*/
+
 .articles-container {
   display: grid;
   grid-template-columns: 1fr 1fr;

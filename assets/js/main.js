@@ -239,17 +239,21 @@ let navEle = document.querySelectorAll(".nav__item");
 
 // Hide all sections when 'toggleSectionsEle' is clicked
 toggleSectionsEle.onclick = function() {
-  sectionsEle.forEach(section => {
-    section.style.display = 'none';
+  sectionsEle.forEach(sectionArt => {
+    // sectionArt.style.display = 'none';
+    sectionArt.classList.add("class_add")
   });
-  // document.getElementById("articles").style.height = "80vh"
+  document.getElementById("articles").style.height = "80vh"
 };
 
 // Show all sections when any nav item is clicked
 navEle.forEach(navItem => {
   navItem.addEventListener('click', function() {
-    sectionsEle.forEach(section => {
-      section.style.display = 'block';
+    sectionsEle.forEach(sectionArt => {
+      // sectionArt.style.display = 'block';
+      sectionArt.classList.remove("class_add")
     });
+    document.getElementById("articles").style.height = "100%"
+
   });
 });
