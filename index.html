@@ -33,7 +33,7 @@
 
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Dr. Dasaradha Ram Barla website design by SRC Designs </title>
+    <title>Dr. Dasaradha Ram Barla website design by SRC Designs</title>
   </head>
   <body>
     <!--=============== HEADER ===============-->
@@ -45,14 +45,15 @@
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="bx bx-home-alt nav__icon"></i>
+              <a href="#home" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>
               </a>
             </li>
 
             <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="bx bx-user nav__icon"></i>
+              <a href="#about" class="nav__link active-link">
+                <!-- <i class="bx bx-home-alt nav__icon"></i> -->
+                <i class="bx bx-clinic"></i>
               </a>
             </li>
 
@@ -74,7 +75,7 @@
                 target="_blank"
                 class="nav__link"
               >
-                <i class="bx bxl-whatsapp nav__icon"></i>
+                <i class="bx bxl-whatsapp nav__icon whats_app_nav"></i>
               </a>
             </li>
           </ul>
@@ -88,7 +89,7 @@
     <main class="main">
       <!--=============== HOME ===============-->
       <section class="home section" id="home">
-        <div class="home__container container ">
+        <div class="home__container container">
           <div class="home__data">
             <!-- <span class="home__greeting">Hello, I'm</span> -->
 
@@ -98,7 +99,7 @@
             </div>
 
             <p class="home__education">
-              M.D. General Medicine | General Physician & Diabetologist
+              M.D. General Medicine <br />General Physician & Diabetologist
             </p>
 
             <div class="home__buttons">
@@ -106,8 +107,8 @@
               <!-- <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">
                                 Download CV
                             </a> -->
-              <a href="#services" class="arrow-container"
-                > Services</a>
+              <!-- <a href="#services" class="arrow-container"
+                > Services</a> -->
             </div>
           </div>
 
@@ -155,20 +156,27 @@
       <!--=============== ABOUT ===============-->
       <section class="about section" id="about">
         <!-- <span class="section__subtitle">My Intro</span> -->
-        <h2 class="section__title barla">Vedic Health Clinic</h2>
+        <h2 class="section__title barla">VEDIC HEALTH CLINIC</h2>
 
         <div class="about__container container grid">
-          <img
-            src="/assets/img/HOS.png"
-            alt=""
-            class="about__img"
-          />
+          <img src="/assets/img/HOS.png" alt="" class="about__img" />
 
           <div class="about__data">
             <div class="about__info">
               <div class="about__box">
                 <!-- <i class="bx bx-support about__icon"></i> -->
-                <i class="fa-regular fa-clock about__icon"></i>
+                <!-- <i class="fa-regular fa-clock about__icon"></i> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#ae68c5"
+                >
+                  <path
+                    d="M520-496v-144q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640v159q0 8 3 15.5t9 13.5l132 132q11 11 28 11t28-11q11-11 11-28t-11-28L520-496ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"
+                  />
+                </svg>
                 <h2 class="about__arrow_content timings__button">
                   5 to 8 pm
                   <i class="fa-solid fa-arrow-right timings services__icon"></i>
@@ -189,13 +197,15 @@
                   <ul class="services__modal-list">
                     <li class="services__modal-item">
                       <i class="bx bx-check services__modal-icon"></i>
-                      <p class="services__modal-info">MON-SAT - 5 to 8 Pm</p>
+                      <p class="services__modal-info">
+                        Monday - Saturday: 5pm - 8pm
+                      </p>
                     </li>
 
                     <li class="services__modal-item">
                       <i class="bx bx-check services__modal-icon"></i>
                       <p class="services__modal-info">
-                        SAT-SUN - 10 Am to 1 Pm
+                        Sunday: Only Appointments 
                       </p>
                     </li>
 
@@ -224,21 +234,43 @@
               </div>
 
               <div class="about__box">
-                <i class="bx bx-award about__icon"></i>
+                <!-- <i class="bx bx-award about__icon"></i> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#ae68c5"
+                >
+                  <path
+                    d="m480-483-68 52q-6 5-12 .5t-4-11.5l26-84-70-56q-5-5-3-11.5t9-6.5h86l26-82q2-7 10-7t10 7l26 82h85q7 0 9.5 6.5T608-582l-71 56 26 84q2 7-4 11.5t-12-.5l-67-52Zm0 363L293-58q-20 7-36.5-5T240-95v-254q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v254q0 20-16.5 32T667-58l-187-62Zm0-200q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z"
+                  />
+                </svg>
                 <h2 class="about__arrow_content timings__button">5 Years +</h2>
                 <h3 class="section__subtitle">Experience</h3>
               </div>
 
               <div class="about__box">
                 <!-- <i class="bx bx-briefcase-alt about__icon"></i> -->
-                <i class="fa-regular fa-hospital about__icon"></i>
+                <!-- <i class="fa-regular fa-hospital about__icon"></i> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#ae68c5"
+                >
+                  <path
+                    d="M480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 79q-14 0-28-5t-25-15q-65-60-115-117t-83.5-110.5q-33.5-53.5-51-103T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 45-17.5 94.5t-51 103Q698-301 648-244T533-127q-11 10-25 15t-28 5Zm0-453Zm0 80q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Z"
+                  />
+                </svg>
 
                 <a
                   href="https://maps.app.goo.gl/96Dqx6RBtwkWMUoS8"
                   target="_blank"
                   class="services__button"
                   ><h2 class="about__arrow_content">
-                    Navigate
+                    Clinic
                     <i
                       class="fa-solid fa-arrow-right timings services__icon"
                     ></i>
@@ -266,23 +298,19 @@
             </p>
             <div
               style="
-                background-color: var(--container-color);
                 border-radius: 8px;
                 padding: 10px 15px;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
                 font-weight: bold;
                 font-style: italic;
               "
             >
-              <p
-                style=" padding-right: 20px"
-                class=" vhc__quote"
-              >
-                Vedic Health Clinic
-              </p>
-              <p class="section__subtitle vhc__subquote ">
+              <p style="padding-right: 20px" class="vhc__quote">
                 - Inspiring Health & Enhancing life.
               </p>
+              <!-- <p class="section__subtitle vhc__subquote">
+                - Inspiring Health & Enhancing life.
+              </p> -->
             </div>
 
             <a
@@ -306,13 +334,14 @@
           justify-content: center;
           font-style: italic;
         "
+        id="quote"
       >
         <div>
-          <span class="section__subtitle quote_style"
-            >"I address not only the disease but also aim to enhance the overall
-            health and well-being of the patient."</span
-          >
-          <h3 style="text-align: right; padding-right: 20px">
+          <p class="section__subtitle quote_style">
+            "I address not only the disease but also aim to enhance the overall
+            health and <span><br />well-being of the patient.</span>"
+          </p>
+          <h3 style="text-align: right; padding-right: 80px">
             - Dr. Dasaradha Ram Barla
           </h3>
         </div>
@@ -563,10 +592,74 @@
         </div>
       </section>
 
+      <!--=============== TESTIMONIALS ===============-->
+      <section id="articles" class="testimonial section">
+        <span class="section__subtitle"></span>
+        <h2 class="section__title">Articles</h2>
+
+        <div class="container">
+          <div class="articles-container">
+            <div class="article_sub">
+              <img src="../DOCTO-main/assets/img/Article_img.jpg" alt="img" />
+
+              <div>
+                <h3 class="testimonial__name">Phani K</h3>
+                <p class="testimonial__description">
+                  Dr. Dasaradha Ram garu clearly values the comprehensive care
+                  of his patients and takes a genuine interest their lives. I've
+                  always felt that the care and attention I receive is more like
+                  that of a family member than just a patient.
+                </p>
+              </div>
+            </div>
+
+            <div class="article_sub">
+              <img src="../DOCTO-main/assets/img/Article_img.jpg" alt="img" />
+
+              <div>
+                <h3 class="testimonial__name">Phani K</h3>
+                <p class="testimonial__description">
+                  Dr. Dasaradha Ram garu clearly values the comprehensive care
+                  of his patients and takes a genuine interest their lives. I've
+                  always felt that the care and attention I receive is more like
+                  that of a family member than just a patient.
+                </p>
+              </div>
+            </div>
+
+            <!-- <div class="testimonial__card swiper-slide">
+              <img
+                src="assets/img/testimonial3.png"
+                alt=""
+                class="testimonial__img"
+              />
+
+              <h3 class="testimonial__name">Mahesh P</h3>
+              <p class="testimonial__description">
+                I am comfortable discussing my health and are always willing to
+                work with my concerns. Being an out-of-state student, I never
+                have to worry about whether or not I am too far to ask a
+                question. Everyone is very accessible and reliable!
+              </p>
+            </div> -->
+          </div>
+          <button id="toggleSections" class=""> <a href="#articles">Read ></a></button>
+          <!-- <button
+                style="color: white"
+                class="button appointment_button services__button"
+                type="submit"
+              >
+                <span>Send Request</span>
+                <i class="bx bx-right-arrow-alt services__icon"></i>
+              </button> -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
       <!--=============== SERVICES ===============-->
       <section id="services" class="services section">
         <!-- <span class="section__subtitle">My Services</span> -->
-        <h2 class="section__title">Specialist in</h2>
+        <h2 class="section__title">Services in</h2>
         <!-- removed class "grid" for below container -->
         <div class="services__container container">
           <div class="services__card">
@@ -587,64 +680,208 @@
             <div style="display: flex; justify-content: space-around">
               <ul class="services__modal-list">
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <!-- <i class="bx bx-check services__modal-icon"></i> -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Fever</p>
                 </li>
 
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">B.P</p>
                 </li>
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Sugar</p>
                 </li>
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Thyroid</p>
                 </li>
               </ul>
               <ul class="services__modal-list">
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Gastric</p>
                 </li>
 
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Joint Pains</p>
                 </li>
 
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Heart Diseases</p>
                 </li>
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Lung Diseases</p>
                 </li>
               </ul>
               <ul class="services__modal-list">
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Kidney Diseases</p>
                 </li>
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Neurological Problems</p>
                 </li>
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Nervous weakness</p>
                 </li>
                 <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Indigestion</p>
                 </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
+                <!-- <li class="services__modal-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#ae68c5"
+                    class="services__modal-icon"
+                  >
+                    <path
+                      d="M630-444H227.98q-15.29 0-25.64-10.29Q192-464.58 192-479.79t10.34-25.71q10.35-10.5 25.64-10.5H630L453.79-692.21Q443-703 443-717.5t11-25.98Q465-754 479.5-754t25.31 10.82L742.6-505.09q5.4 5.41 7.9 11.72 2.5 6.31 2.5 13.53 0 7.21-2.5 13.53Q748-460 743-455L505-217q-11 11-25 10.5t-25-11.02q-11-11.48-11-26.15 0-14.66 11-25.33l175-175Z"
+                    />
+                  </svg>
                   <p class="services__modal-info">Jaundice</p>
-                </li>
+                </li> -->
               </ul>
             </div>
 
@@ -870,70 +1107,10 @@
         <div id="details-section"></div>
       </section> -->
 
-      <!--=============== TESTIMONIALS ===============-->
-      <!-- <section class="testimonial section">
-        <span class="section__subtitle"></span>
-        <h2 class="section__title">Patient Speaks</h2>
-
-        <div class="testimonial__container container swiper">
-          <div class="swiper-wrapper">
-            <div class="testimonial__card swiper-slide">
-              <img
-                src="assets/img/testimonial1.png"
-                alt=""
-                class="testimonial__img"
-              />
-
-              <h3 class="testimonial__name">Phani K</h3>
-              <p class="testimonial__description">
-                Dr. Dasaradha Ram garu clearly values the comprehensive care of
-                his patients and takes a genuine interest their lives. I've
-                always felt that the care and attention I receive is more like
-                that of a family member than just a patient.
-              </p>
-            </div>
-
-            <div class="testimonial__card swiper-slide">
-              <img
-                src="assets/img/testimonial2.png"
-                alt=""
-                class="testimonial__img"
-              />
-
-              <h3 class="testimonial__name">SriRam G</h3>
-              <p class="testimonial__description">
-                is the best doctor I have ever had. He is bright, articulate and
-                takes the time to listen to all of my concerns. Most important,
-                his health care and analysis for me has always worked. I am very
-                fortunate to have him as my doctor.
-              </p>
-            </div>
-
-            <div class="testimonial__card swiper-slide">
-              <img
-                src="assets/img/testimonial3.png"
-                alt=""
-                class="testimonial__img"
-              />
-
-              <h3 class="testimonial__name">Mahesh P</h3>
-              <p class="testimonial__description">
-                I am comfortable discussing my health and are always willing to
-                work with my concerns. Being an out-of-state student, I never
-                have to worry about whether or not I am too far to ask a
-                question. Everyone is very accessible and reliable!
-              </p>
-            </div>
-          </div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-      </section> -->
-
       <!--=============== CONTACT ===============-->
       <section class="contact section" id="contact">
         <span class="section__subtitle">Get in touch</span>
-        <h2 class="section__title">Book an Appointment</h2>
+        <h2 class="section__title">Contact Us</h2>
 
         <div class="contact__container container grid">
           <div class="contact__content">
@@ -942,7 +1119,7 @@
             <div class="contact__info">
               <div class="contact__card">
                 <i class="bx bx-mail-send contact__card-icon"></i>
-                <h3 class="contact__card-title">Email</h3>
+                <!-- <h3 class="contact__card-title">Email</h3> -->
                 <span class="contact__card-data"
                   >dr.dasaradharam@gmail.com</span
                 >
@@ -960,7 +1137,7 @@
 
               <div class="contact__card">
                 <i class="bx bxl-whatsapp contact__card-icon"></i>
-                <h3 class="contact__card-title">Whatsapp</h3>
+                <!-- <h3 class="contact__card-title">Whatsapp</h3> -->
                 <span class="contact__card-data">+91 90809 88450</span>
 
                 <!-- Insert a real number plus country code -->
@@ -978,7 +1155,7 @@
                 <!-- <i class="bx bxl-messenger contact__card-icon"></i> -->
                 <!-- <i class="fa-solid fa-phone-volume contact__card-icon"></i> -->
                 <i class="bx bx-phone-call contact__card-icon"></i>
-                <h3 class="contact__card-title">Call me</h3>
+                <!-- <h3 class="contact__card-title">Call me</h3> -->
                 <span class="contact__card-data">+91 90809 88450</span>
 
                 <!-- Insert your brand name or profile -->
@@ -1035,28 +1212,56 @@
                 <i class="bx bx-right-arrow-alt services__icon"></i>
               </button>
             </form> -->
-            <form name="submit-to-google-sheet" id="submit-to-google-sheet" class="contact__form">
+            <form
+              name="submit-to-google-sheet"
+              id="submit-to-google-sheet"
+              class="contact__form"
+            >
               <div class="contact__form-div">
                 <label class="contact__form-tag">Name :</label>
-                <input name="name" type="text" placeholder="" class="contact__form-input" required />
+                <input
+                  name="name"
+                  type="text"
+                  placeholder=""
+                  class="contact__form-input"
+                  required
+                />
               </div>
-            
+
               <div class="contact__form-div">
                 <label class="contact__form-tag">Phone No :</label>
-                <input type="tel" placeholder="" class="contact__form-input" name="phone" required />
+                <input
+                  type="tel"
+                  placeholder=""
+                  class="contact__form-input"
+                  name="phone"
+                  required
+                />
               </div>
-            
+
               <div class="contact__form-div contact__form-area">
-                <label class="contact__form-tag">Explain your medical condition :</label>
-                <textarea name="message" cols="30" rows="10" placeholder="" class="contact__form-input" required></textarea>
+                <label class="contact__form-tag"
+                  >Explain your medical condition :</label
+                >
+                <textarea
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  placeholder=""
+                  class="contact__form-input"
+                  required
+                ></textarea>
               </div>
-            
-              <button style="color: white" class="button appointment_button services__button" type="submit">
+
+              <button
+                style="color: white"
+                class="button appointment_button services__button"
+                type="submit"
+              >
                 <span>Send Request</span>
                 <i class="bx bx-right-arrow-alt services__icon"></i>
               </button>
             </form>
-                       
           </div>
         </div>
       </section>
@@ -1069,19 +1274,19 @@
 
         <ul class="footer__list">
           <li>
-            <a href="#home" class="footer__link">Home</a>
+            <a href="#home" class="footer__link nav__item">Home</a>
           </li>
           <li>
-            <a href="#about" class="footer__link">About</a>
+            <a href="#about" class="footer__link nav__item">About</a>
           </li>
           <li>
-            <a href="#experience" class="footer__link">Experience</a>
+            <a href="#experience" class="footer__link nav__item">Experience</a>
           </li>
           <li>
-            <a href="#services" class="footer__link">Services</a>
+            <a href="#services" class="footer__link nav__item">Services</a>
           </li>
           <li>
-            <a href="#contact" class="footer__link">Contact</a>
+            <a href="#contact" class="footer__link nav__item">Contact</a>
           </li>
         </ul>
 
@@ -1166,54 +1371,53 @@
           .catch(error => console.error('Error!', error.message));
       });
     </script> -->
-    
+
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxWVUCwR2XjlWs4SaAYoOVAJ1zpG3H3Pi_6aL68c9eh_q-h73AHMUt2vknLYIcvGZoY4A/exec';
-      const form = document.forms['submit-to-google-sheet'];
-    
-      form.addEventListener('submit', e => {
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxWVUCwR2XjlWs4SaAYoOVAJ1zpG3H3Pi_6aL68c9eh_q-h73AHMUt2vknLYIcvGZoY4A/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
         e.preventDefault();
-    
+
         // Send form data via Fetch API
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then(response => {
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
             if (response.ok) {
               return response.json();
             } else {
-              throw new Error('Form submission failed.');
+              throw new Error("Form submission failed.");
             }
           })
-          .then(data => {
-            console.log('Success!', data);
-    
+          .then((data) => {
+            console.log("Success!", data);
+
             // Clear form fields after submission
             form.reset();
-    
+
             // Show success toast notification
-            showToast('Form submitted successfully!', 'success');
+            showToast("Form submitted successfully!", "success");
           })
-          .catch(error => {
-            console.error('Error!', error.message);
-    
+          .catch((error) => {
+            console.error("Error!", error.message);
+
             // Show error toast notification
-            showToast('Error submitting form. Please try again.', 'error');
+            showToast("Error submitting form. Please try again.", "error");
           });
       });
-    
+
       // Toast notification function
       function showToast(message, type) {
-        const toast = document.createElement('div');
+        const toast = document.createElement("div");
         toast.className = `toast ${type}`;
         toast.innerText = message;
         document.body.appendChild(toast);
-    
+
         // Remove toast after 3 seconds
         setTimeout(() => {
           toast.remove();
         }, 3000);
       }
     </script>
-    
-    
   </body>
 </html>

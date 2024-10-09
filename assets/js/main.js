@@ -229,3 +229,27 @@ sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: "bottom" });
 //   const detailsSection = document.getElementById("details-section");
 //   detailsSection.style.display = "none";
 // }
+let toggleSectionsEle = document.getElementById("toggleSections");
+
+// Select all sections
+let sectionsEle = document.querySelectorAll("#home, #about, #quote, #toggleSections, #experience, #services, #contact");
+
+// Select all nav items
+let navEle = document.querySelectorAll(".nav__item");
+
+// Hide all sections when 'toggleSectionsEle' is clicked
+toggleSectionsEle.onclick = function() {
+  sectionsEle.forEach(section => {
+    section.style.display = 'none';
+  });
+  // document.getElementById("articles").style.height = "80vh"
+};
+
+// Show all sections when any nav item is clicked
+navEle.forEach(navItem => {
+  navItem.addEventListener('click', function() {
+    sectionsEle.forEach(section => {
+      section.style.display = 'block';
+    });
+  });
+});
