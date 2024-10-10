@@ -259,7 +259,7 @@ toggleSectionsEle.onclick = function() {
       article.classList.remove("class_add"); // Add class to hide sections
     }
   });
-  document.getElementById("articles").style.height = "80vh"
+  // document.getElementById("articles").style.height = "80vh"
 };
 
 // Show all sections when any nav item is clicked
