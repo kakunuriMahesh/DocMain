@@ -229,6 +229,10 @@ sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: "bottom" });
 //   const detailsSection = document.getElementById("details-section");
 //   detailsSection.style.display = "none";
 // }
+
+
+// ========= ARTICLES ========== //
+
 let toggleSectionsEle = document.getElementById("toggleSections");
 
 // Select all sections
@@ -237,11 +241,23 @@ let sectionsEle = document.querySelectorAll("#home, #about, #quote, #toggleSecti
 // Select all nav items
 let navEle = document.querySelectorAll(".nav__item");
 
+let articleSubContainers = document.querySelectorAll(".article_sub");
+articleSubContainers.forEach((article, index) => {
+  if (index > 1) {
+    article.classList.add("class_add"); // Add class to hide sections
+  }
+});
+
 // Hide all sections when 'toggleSectionsEle' is clicked
 toggleSectionsEle.onclick = function() {
   sectionsEle.forEach(sectionArt => {
     // sectionArt.style.display = 'none';
     sectionArt.classList.add("class_add")
+  });
+  articleSubContainers.forEach((article, index) => {
+    if (index > 1) {
+      article.classList.remove("class_add"); // Add class to hide sections
+    }
   });
   document.getElementById("articles").style.height = "80vh"
 };
@@ -252,6 +268,11 @@ navEle.forEach(navItem => {
     sectionsEle.forEach(sectionArt => {
       // sectionArt.style.display = 'block';
       sectionArt.classList.remove("class_add")
+    });
+    articleSubContainers.forEach((article, index) => {
+      if (index > 1) {
+        article.classList.add("class_add"); // Add class to hide sections
+      }
     });
     document.getElementById("articles").style.height = "100%"
 

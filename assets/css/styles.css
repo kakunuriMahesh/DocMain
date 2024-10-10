@@ -907,7 +907,8 @@ body.light-theme {
 
 .articles-container {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  flex-wrap: wrap;
   gap: 1rem;
 }
 .article_sub {
@@ -917,7 +918,7 @@ body.light-theme {
   display: flex;
   align-items: center;
   gap: 15px;
-  width: 50%;
+  width: 49%;
   box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
 }
 .testimonial__card {
