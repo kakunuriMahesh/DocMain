@@ -40,7 +40,9 @@
 
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">VHC</a>
+        <a href="#" class="nav__logo"
+          ><img src="./assets/img/LOGO.png" style="height: 100px" alt="logo"
+        /></a>
 
         <div class="nav__menu">
           <ul class="nav__list">
@@ -101,15 +103,6 @@
             <p class="home__education">
               M.D. General Medicine <br />General Physician & Diabetologist
             </p>
-
-            <div class="home__buttons">
-              <!-- Insert your CV -->
-              <!-- <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">
-                                Download CV
-                            </a> -->
-              <!-- <a href="#services" class="arrow-container"
-                > Services</a> -->
-            </div>
           </div>
 
           <div class="home__handle">
@@ -120,6 +113,9 @@
               class="home__img"
             />
           </div>
+          <p style="text-align: center" class="home__education-hidden">
+            M.D. General Medicine <br />General Physician & Diabetologist
+          </p>
 
           <!-- ===== side icons closed ====== -->
           <!-- <div class="home__social">
@@ -590,29 +586,41 @@
         <div class="container">
           <div class="articles-container">
             <div class="article_sub">
-              <img src="../DOCTO-main/assets/img/Article_img.jpg" alt="img" />
+              <img
+                style="height: 100%; width: 25%"
+                src="./assets/img/Article_img.jpg"
+                alt="img"
+              />
 
               <div>
-                <h3 class="testimonial__name">Phani K</h3>
+                <h3 class="testimonial__name">
+                  How to Stay Safe and Healthy During the Monsoon Season
+                </h3>
                 <p class="testimonial__description">
-                  Dr. Dasaradha Ram garu clearly values the comprehensive care
-                  of his patients and takes a genuine interest their lives. I've
-                  always felt that the care and attention I receive is more like
-                  that of a family member than just a patient.
+                  The monsoon season, while refreshing after the scorching heat,
+                  brings with it a heightened risk of infections like the flu,
+                  dengue, and waterborne diseases. To stay healthy and safe
+                  during this time
                 </p>
               </div>
             </div>
 
             <div class="article_sub">
-              <img src="../DOCTO-main/assets/img/Article_img.jpg" alt="img" />
+              <img
+                style="height: 100%; width: 25%"
+                src="./assets/img/Article_img.jpg"
+                alt="img"
+              />
 
               <div>
-                <h3 class="testimonial__name">Phani K</h3>
+                <h3 class="testimonial__name">
+                  How to Stay Safe and Healthy During the Monsoon Season
+                </h3>
                 <p class="testimonial__description">
-                  Dr. Dasaradha Ram garu clearly values the comprehensive care
-                  of his patients and takes a genuine interest their lives. I've
-                  always felt that the care and attention I receive is more like
-                  that of a family member than just a patient.
+                  The monsoon season, while refreshing after the scorching heat,
+                  brings with it a heightened risk of infections like the flu,
+                  dengue, and waterborne diseases. To stay healthy and safe
+                  during this time
                 </p>
               </div>
             </div>
@@ -1109,7 +1117,7 @@
         <h2 class="section__title">Contact Us</h2>
 
         <div class="contact__container container grid">
-          <div class="contact__content">
+          <div class="contact__content order-one">
             <h3 class="contact__title">Contact Details</h3>
 
             <div class="contact__info">
@@ -1167,7 +1175,7 @@
             </div>
           </div>
 
-          <div class="contact__content">
+          <div class="contact__content order-two">
             <h3 class="contact__title">Book an Appointment</h3>
 
             <!-- <form name="submit-to-google-sheet" id="submit-to-google-sheet" class="contact__form">
@@ -1268,48 +1276,116 @@
       <div class="footer__container container">
         <h1 class="footer__title">VEDIC HEALTH CLINIC</h1>
 
-        <ul class="footer__list">
-          <li>
-            <a href="#home" class="footer__link nav__item">Home</a>
-          </li>
-          <li>
-            <a href="#about" class="footer__link nav__item">About</a>
-          </li>
-          <li>
-            <a href="#experience" class="footer__link nav__item">Experience</a>
-          </li>
-          <li>
-            <a href="#services" class="footer__link nav__item">Services</a>
-          </li>
-          <li>
-            <a href="#contact" class="footer__link nav__item">Contact</a>
-          </li>
-        </ul>
+        <div class="pages__list">
+          <img
+            style="height: 150px; width: 150px"
+            src="./assets/img/LOGO.png"
+            alt="logo"
+          />
+          <div class="pages">
+            <p style="font-weight: bold; margin-bottom: 25px">PAGES</p>
+            <ul class="footer__list">
+              <li>
+                <a href="#home" class="footer__link nav__item">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="footer__link nav__item">About</a>
+              </li>
+              <li>
+                <a href="#experience" class="footer__link nav__item"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="footer__link nav__item">Services</a>
+              </li>
+              <li>
+                <a href="#contact" class="footer__link nav__item">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="pages">
+            <p style="font-weight: bold; margin-bottom: 25px">ADDRESS</p>
+            <ul class="footer__list">
+              <li>
+                <p>
+                  <i style="color: #fff" class="fa-solid fa-location-dot"></i>
+                  <a
+                    style="color: #fff"
+                    href="https://maps.app.goo.gl/96Dqx6RBtwkWMUoS8"
+                    target="_blank"
+                    >PM PALEM,<br />
+                    MADHURAWADA,<br />
+                    VISHAKAPATNAM</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="pages">
+            <p style="font-weight: bold; margin-bottom: 25px">CONTACT</p>
+            <ul class="footer__list">
+              <li>
+                <!-- Insert your original email -->
+                <a
+                  style="color: #fff"
+                  href="mailto:dr.dasaradharam@gmail.com"
+                  target="_blank"
+                >
+                  <span>dr.dasaradharam@gmail.com</span>
+                </a>
+              </li>
+              <li style="text-align: left">
+                <!-- Insert a real number plus country code -->
+                <a
+                  style="color: #fff"
+                  href="https://api.whatsapp.com/send?phone=9080988450&text=Hello, more information!"
+                  target="_blank"
+                >
+                  <span>+91 90809 88450</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-        <ul class="footer__social">
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-facebook"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-instagram"></i>
-          </a>
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-twitter"></i>
-          </a>
-        </ul>
-        <p class="address__location">
+        <hr style="color: #fff" />
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <span class="footer__copy">
+            &#169; VHC HOSPITALS. All rigths reserved
+          </span>
+          <ul class="footer__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </ul>
+        </div>
+
+        <!-- <p class="address__location">
           <i class="fa-solid fa-location-dot"></i>
           <b>Address:</b>
           <a
@@ -1318,21 +1394,10 @@
             target="_blank"
             >PM PALEM, MADHURAWADA, VISHAKAPATNAM</a
           >
-
-          <!-- <span></i><b>Address:</b> </span> <br />
-          PM PALEM, <br />
-          MADHURAWADA,<span
-            ><br />
-            VISHAKAPATNAM</span
-          > -->
         </p>
         <a href="https://maps.app.goo.gl/96Dqx6RBtwkWMUoS8" target="_blank"
           ><button class="navigate__me">Navigate me</button></a
-        >
-
-        <span class="footer__copy">
-          &#169; VHC HOSPITALS. All rigths reserved
-        </span>
+        > -->
       </div>
     </footer>
     <!--  -->

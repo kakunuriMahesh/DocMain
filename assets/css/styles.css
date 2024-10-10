@@ -169,10 +169,11 @@ body.light-theme {
 .light-theme .home__scroll,
 .light-theme .button,
 .light-theme .button:hover,
-.light-theme .active-work,
-.light-theme .footer__title,
+.light-theme .active-work
+/* .light-theme .footer__title,
 .light-theme .footer__link,
-.light-theme .footer__copy {
+.light-theme .footer__copy */
+ {
   color: var(--title-color);
 }
 
@@ -344,10 +345,14 @@ body.light-theme {
 }
 
 .home__education {
+  display: block;
   color: var(--text-color);
   margin-bottom: 0.5rem;
   font-size: 17px;
   /* font-family: inter; */
+}
+.home__education-hidden{
+  display: none;
 }
 
 .home__name {
@@ -556,6 +561,26 @@ body.light-theme {
   .home__img {
     order: 1;
   }
+  .pages__list{
+    /* display: flex; */
+    justify-content: start;
+    gap: 50px;
+    
+  }
+  .order-two{
+    order: 0;
+  }
+  .order-one{
+    order: 1;
+  }
+  .home__education{
+    display: none;
+
+  }
+  .home__education-hidden{
+    display: block;
+  }
+
 }
 
 .skills__title {
@@ -573,11 +598,7 @@ body.light-theme {
   justify-content: center;
   column-gap: 2.5rem;
 } */
-.address__location {
-  margin-top: 15px;
-  text-align: center;
-  color: black;
-}
+
 
 .skills__group {
   display: grid;
@@ -806,6 +827,7 @@ body.light-theme {
     font-size: 12px;
   }
 }
+
 /*Active modal*/
 .active-modal {
   opacity: 1;
@@ -1042,35 +1064,57 @@ body.light-theme {
 
 .footer__container {
   padding: 2rem 0 6rem;
-  text-align: center;
+  /* text-align: center; */
+  color: #fff;
 }
 
 .footer__title,
 .footer__link {
-  color: var(--body-color);
+  /* color: var(--body-color); */
+  color: #fff;
+
+
 }
 
 .footer__title {
   text-align: center;
   margin-bottom: 2rem;
+  color: #fff;
+
+}
+.pages__list{
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content:space-around;
+  
+width: 100%;
 }
 
 .footer__list {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* text-align: left; */
   column-gap: 1.5rem;
   margin-bottom: 2rem;
+  color: #fff;
+
 }
 
 .footer__social {
   display: flex;
   justify-content: center;
   column-gap: 1.25rem;
+  color: #fff;
+
 }
 
 .footer__social-link {
   background-color: var(--body-color);
-  color: var(--first-color);
+  /* color: var(--first-color); */
+  color: #fff;
+
   padding: 0.25rem;
   border-radius: 0.25rem;
   font-size: 1rem;
@@ -1079,8 +1123,10 @@ body.light-theme {
 
 .footer__copy {
   display: block;
-  margin-top: 4.5rem;
-  color: var(--container-color);
+  /* margin-top: 4.5rem; */
+  /* color: var(--container-color); */
+  color: #fff;
+
   text-align: center;
   font-size: var(--smaller-font-size);
 }
@@ -1311,6 +1357,7 @@ body.light-theme {
   .footer__social-link {
     font-size: 1.25rem;
     padding: 0.4rem;
+    margin-top: 5px;
     border-radius: 0.5rem;
   }
 }
