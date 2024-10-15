@@ -2,8 +2,10 @@
 function scrollHeader() {
   const header = document.getElementById("header");
   // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-  if (this.scrollY >= 50) header.classList.add("scroll-header");
+  if (this.scrollY >= 0) header.classList.add("scroll-header");
   else header.classList.remove("scroll-header");
+  // console.log(scrollY)
+
 }
 window.addEventListener("scroll", scrollHeader);
 
@@ -116,29 +118,110 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 // }
 // window.addEventListener("scroll", scrollActive);
 
-const sections = document.querySelectorAll("section[id]");
+// const sections = document.querySelectorAll("section[id]");
 
-function scrollActive() {
-  const scrollY = window.pageYOffset;
+// function scrollActive() {
+//   const scrollY = window.pageYOffset;
 
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 58,
-      sectionId = current.getAttribute("id");
+//   sections.forEach((current) => {
+//     const sectionHeight = current.offsetHeight,
+//       sectionTop = current.offsetTop - 58,
+//       sectionId = current.getAttribute("id");
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__list a[href*=" + sectionId + "]")
-        .classList.add("active-link");
-    } else {
-      document
-        .querySelector(".nav__list a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
-    }
+//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//       document
+//         .querySelector(".nav__list a[href*=" + sectionId + "]")
+//         .classList.add("active-link");
+//     } else {
+//       document
+//         .querySelector(".nav__list a[href*=" + sectionId + "]")
+//         .classList.remove("active-link");
+//     }
+//   });
+// }
+// window.addEventListener("scroll", scrollActive);
+
+// ===== scroll start ===== //
+// // Get all nav links and sections
+// const navLinks = document.querySelectorAll(".nav__link");
+// const sections = document.querySelectorAll("section");
+
+// // Function to remove active class from all nav links
+// const removeActiveClass = () => {
+//   navLinks.forEach((link) => {
+//     link.classList.remove("active-link");
+//   });
+// };
+
+// // Function to add active class to the nav link of the section currently in view
+// const setActiveLink = () => {
+//   let index = sections.length;
+
+//   // Loop through sections to find which one is currently in view
+//   while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+//   // Remove active class from all links and add to the one corresponding to the active section
+//   removeActiveClass();
+//   navLinks[index].classList.add("active-link");
+// };
+
+// // Run setActiveLink on page load and when scrolling
+// window.addEventListener("scroll", setActiveLink);
+
+// // Also apply active class when clicking on nav links
+// navLinks.forEach((link) => {
+//   link.addEventListener("click", () => {
+//     removeActiveClass();
+//     link.classList.add("active-link");
+//   });
+// });
+
+// scroll nav end//
+
+// second scroll start //
+// Get all nav links and sections
+const navLinks = document.querySelectorAll('.nav__link');
+const sections = document.querySelectorAll('section');
+
+// Function to remove active class from all nav links
+const removeActiveClass = () => {
+  navLinks.forEach(link => {
+    link.classList.remove('active-link');
   });
-}
-window.addEventListener("scroll", scrollActive);
+};
 
+// Function to add active class to the nav link of the section currently in view
+const setActiveLink = () => {
+  let currentIndex = sections.length;
+
+  // Loop through sections to find the one currently in view
+  // while (--currentIndex && window.scrollY + 50 < sections[currentIndex].offsetTop) {}
+  console.log(sections[currentIndex].offsetTop, parseInt(window.scrollY))
+  
+
+  // Remove active class from all links and add to the one corresponding to the active section
+  removeActiveClass();
+  // if ((sections[currentIndex].offsetTop == window.scrollY) && currentIndex!= 4){
+  //   navLinks[currentIndex].classList.add('active-link');
+  //   console.log('added')
+  // }
+  if (currentIndex >= 0 && currentIndex!= 4) {
+    navLinks[currentIndex].classList.add('active-link');
+  }
+};
+
+// Run setActiveLink on page load and when scrolling
+window.addEventListener('scroll', setActiveLink);
+
+// Also apply active class when clicking on nav links
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    removeActiveClass();
+    link.classList.add('active-link');
+  });
+});
+
+// scroll end //
 
 /*=============== LIGHT DARK THEME ===============*/
 const themeButton = document.getElementById("theme-button");
@@ -230,51 +313,81 @@ sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: "bottom" });
 //   detailsSection.style.display = "none";
 // }
 
-
 // ========= ARTICLES ========== //
 
-let toggleSectionsEle = document.getElementById("toggleSections");
+let firstArticleEle = document.getElementById("firstArticle");
+let secondArticleEle = document.getElementById("secondArticle");
 
 // Select all sections
-let sectionsEle = document.querySelectorAll("#home, #about, #quote, #toggleSections, #experience, #services, #contact");
+let sectionsEle = document.querySelectorAll(
+  "#home, #about, #quote, #experience, #services, #contact"
+);
 
 // Select all nav items
 let navEle = document.querySelectorAll(".nav__item");
+let firstListEle = document.getElementById("firstList");
+let secondListEle = document.getElementById("secondList");
 
 let articleSubContainers = document.querySelectorAll(".article_sub");
 articleSubContainers.forEach((article, index) => {
   if (index > 1) {
     article.classList.add("class_add"); // Add class to hide sections
   }
+
+  firstListEle.classList.add("class_add");
+
+  secondListEle.classList.add("class_add");
 });
 
-// Hide all sections when 'toggleSectionsEle' is clicked
-toggleSectionsEle.onclick = function() {
-  sectionsEle.forEach(sectionArt => {
+// Hide all sections when 'firstArticleEle' is clicked
+firstArticleEle.onclick = function () {
+  firstListEle.classList.remove("class_add");
+  secondListEle.classList.add("class_add");
+
+  sectionsEle.forEach((sectionArt) => {
     // sectionArt.style.display = 'none';
-    sectionArt.classList.add("class_add")
+    sectionArt.classList.add("class_add");
   });
-  articleSubContainers.forEach((article, index) => {
-    if (index > 1) {
-      article.classList.remove("class_add"); // Add class to hide sections
-    }
-  });
+  firstArticleEle.classList.add("class_add");
+  secondArticleEle.classList.add("class_add");
+
+  // articleSubContainers.forEach((article, index) => {
+  //   if (index > 1) {
+  //     article.classList.remove("class_add"); // Add class to hide sections
+  //   }
+  // });
   // document.getElementById("articles").style.height = "80vh"
 };
 
+secondArticleEle.onclick = function () {
+  firstListEle.classList.add("class_add");
+  secondListEle.classList.remove("class_add");
+
+  sectionsEle.forEach((sectionArt) => {
+    // sectionArt.style.display = 'none';
+    sectionArt.classList.add("class_add");
+  });
+  firstArticleEle.classList.add("class_add");
+  secondArticleEle.classList.add("class_add");
+};
+
 // Show all sections when any nav item is clicked
-navEle.forEach(navItem => {
-  navItem.addEventListener('click', function() {
-    sectionsEle.forEach(sectionArt => {
+navEle.forEach((navItem) => {
+  navItem.addEventListener("click", function () {
+    sectionsEle.forEach((sectionArt) => {
       // sectionArt.style.display = 'block';
-      sectionArt.classList.remove("class_add")
+      sectionArt.classList.remove("class_add");
+      firstArticleEle.classList.remove("class_add");
+      secondArticleEle.classList.remove("class_add");
+      firstListEle.classList.add('class_add')
+      secondListEle.classList.add('class_add')
     });
+
     articleSubContainers.forEach((article, index) => {
       if (index > 1) {
         article.classList.add("class_add"); // Add class to hide sections
       }
     });
-    document.getElementById("articles").style.height = "100%"
-
+    document.getElementById("articles").style.height = "100%";
   });
 });
