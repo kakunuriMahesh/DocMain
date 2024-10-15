@@ -985,6 +985,7 @@ button {
 .testimonial__description {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
+  text-align: justify;
 }
 
 /* Swiper class */

@@ -96,6 +96,32 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 // const sections = document.querySelectorAll("section[id]");
+const sections = document.querySelectorAll("#home, #about, #experience, #articles, #contact");
+
+
+function scrollActive() {
+  const scrollY = window.pageYOffset;
+  console.log(scrollY)
+
+  sections.forEach((current) => {
+    console.log(current)
+    const sectionHeight = current.offsetHeight,
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute("id");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.add("active-link");
+    } else {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.remove("active-link");
+    }
+  });
+}
+window.addEventListener("scroll", scrollActive);
+// const sections = document.querySelectorAll("section[id]");
 
 // function scrollActive() {
 //   const scrollY = window.pageYOffset;
@@ -179,47 +205,47 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 // scroll nav end//
 
 // second scroll start //
-// Get all nav links and sections
-const navLinks = document.querySelectorAll('.nav__link');
-const sections = document.querySelectorAll('section');
+// // Get all nav links and sections
+// const navLinks = document.querySelectorAll('.nav__link');
+// const sections = document.querySelectorAll('section');
 
-// Function to remove active class from all nav links
-const removeActiveClass = () => {
-  navLinks.forEach(link => {
-    link.classList.remove('active-link');
-  });
-};
+// // Function to remove active class from all nav links
+// const removeActiveClass = () => {
+//   navLinks.forEach(link => {
+//     link.classList.remove('active-link');
+//   });
+// };
 
-// Function to add active class to the nav link of the section currently in view
-const setActiveLink = () => {
-  let currentIndex = sections.length;
+// // Function to add active class to the nav link of the section currently in view
+// const setActiveLink = () => {
+//   let currentIndex = sections.length;
 
-  // Loop through sections to find the one currently in view
-  // while (--currentIndex && window.scrollY + 50 < sections[currentIndex].offsetTop) {}
-  console.log(sections[currentIndex].offsetTop, parseInt(window.scrollY))
+//   // Loop through sections to find the one currently in view
+//   while (--currentIndex && window.scrollY + 50 < sections[currentIndex].offsetTop) {}
+//   console.log(sections[currentIndex].offsetTop, parseInt(window.scrollY))
   
 
-  // Remove active class from all links and add to the one corresponding to the active section
-  removeActiveClass();
-  // if ((sections[currentIndex].offsetTop == window.scrollY) && currentIndex!= 4){
-  //   navLinks[currentIndex].classList.add('active-link');
-  //   console.log('added')
-  // }
-  if (currentIndex >= 0 && currentIndex!= 4) {
-    navLinks[currentIndex].classList.add('active-link');
-  }
-};
+//   // Remove active class from all links and add to the one corresponding to the active section
+//   removeActiveClass();
+//   if ((sections[currentIndex].offsetTop == window.scrollY)){
+//     navLinks[currentIndex].classList.add('active-link');
+//     console.log('added')
+//   }
+//   if (currentIndex >= 0 && currentIndex!= 4) {
+//     navLinks[currentIndex].classList.add('active-link');
+//   }
+// };
 
-// Run setActiveLink on page load and when scrolling
-window.addEventListener('scroll', setActiveLink);
+// // Run setActiveLink on page load and when scrolling
+// window.addEventListener('scroll', setActiveLink);
 
-// Also apply active class when clicking on nav links
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    removeActiveClass();
-    link.classList.add('active-link');
-  });
-});
+// // Also apply active class when clicking on nav links
+// navLinks.forEach(link => {
+//   link.addEventListener('click', () => {
+//     removeActiveClass();
+//     link.classList.add('active-link');
+//   });
+// });
 
 // scroll end //
 
