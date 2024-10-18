@@ -104,7 +104,7 @@ function scrollActive() {
   console.log(scrollY)
 
   sections.forEach((current) => {
-    console.log(current)
+    // console.log(current)
     const sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop - 58,
       sectionId = current.getAttribute("id");
