@@ -409,6 +409,7 @@ body.light-theme {
   .article_sub_points {
     width: 95vw !important;
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .article_sub {
@@ -763,6 +764,7 @@ body.light-theme {
 .testimonial__description {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
+  padding:0 10px ;
   text-align: justify;
 }
 .swiper-pagination-bullet {
