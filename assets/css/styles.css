@@ -417,7 +417,7 @@ body.light-theme {
 }
 .article-list {
   width: 49%;
-  background-color: aliceblue;
+  background-color: var(--container-color);
   border-radius: 8px;
   padding: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
