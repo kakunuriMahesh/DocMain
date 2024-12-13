@@ -407,16 +407,40 @@ body.light-theme {
 }
 .img-content-container{
   display: flex;
-  align-items: start;
+  flex-direction: column;
+  align-items: center;
 }
+.artical-detail-img{
+  height: 100%; 
+  width: 45%; 
+  border-radius: 8px;
+}
+.article-list {
+  width: 49%;
+  background-color: aliceblue;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-list:hover {
+  transform: scale(1);
+  box-shadow: 0 0 8px rgb(205, 205, 205);
+}
+
 @media (max-width: 835px) {
   .article_sub_points {
     width: 95vw !important;
-    /* display: flex;
-    align-items: center; */
   }
   .article_sub {
     width: 93vw !important;
+  }
+  .article-list{
+    width: 90vw;
+  }
+  .testimonial__description{
+    width: 80vw;
+    padding: 5px;
   }
 }
 @media (max-width: 800px) {
@@ -614,7 +638,7 @@ body.light-theme {
 }
 .services__modal-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   column-gap: 0.5rem;
 }
 .services__modal-icon {
@@ -651,7 +675,7 @@ body.light-theme {
 }
 @media (max-width: 800px) {
   .quote_style {
-    font-size: 25px;
+    font-size: 21px;
     padding: 0px 10px;
   }
   .about__arrow_content {
@@ -689,6 +713,10 @@ body.light-theme {
     font-size: 12px;
     padding: 2px 7px;
   }
+  .services__modal-info{
+    font-size: 10px;
+  }
+  
   .img-content-container{
     align-items: center;
     flex-direction: column;
@@ -769,10 +797,14 @@ body.light-theme {
   margin-bottom: 0.25rem;
 }
 .testimonial__description {
-  font-size: var(--small-font-size);
+  font-size: 14.5px;
   color: var(--text-color-light);
   text-align: justify;
   padding:0px 10px;
+}
+.artical__description{
+  color: var(--text-color-light);
+  text-align: justify;
 }
 .swiper-pagination-bullet {
   background-color: var(--text-color-light);
@@ -931,6 +963,7 @@ body.light-theme {
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(var(--second-hue), 8%, 20%);
 }
+
 @media screen and (max-width: 320px) {
   .nav__menu {
     padding: 1rem 1.5rem;
