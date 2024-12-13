@@ -684,6 +684,9 @@ body.light-theme {
   .vhc__subquote {
     font-size: 12px;
   }
+  .img-content-container{
+    width: 90%;
+  }
 }
 .active-modal {
   opacity: 1;
@@ -717,10 +720,7 @@ body.light-theme {
     font-size: 10px;
   }
   
-  .img-content-container{
-    align-items: center;
-    flex-direction: column;
-  }
+  
 }
 .work__card {
   background-color: var(--container-color);
